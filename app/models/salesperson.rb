@@ -1,3 +1,3 @@
 class Salesperson < ApplicationRecord
-    #speaks to the salespersons
+    #speaks to the salespeople table
 end
