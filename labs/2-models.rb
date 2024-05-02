@@ -53,9 +53,15 @@ update.save
 
 # CHALLENGE:
 # 5. write code to display each salesperson's full name
-first_name = update["first_name"]
-last_name = update["last_name"]
-puts "#{first_name} #{last_name}"
+
+for identity in Salesperson.all
+    first_name = identity["first_name"]
+    last_name = identity["last_name"]
+    puts "#{first_name} #{last_name}"
+end
+# first_name = update["first_name"]
+# last_name = update["last_name"]
+# puts "#{first_name} #{last_name}"
 
 # ---------------------------------
 # Salespeople: 2
