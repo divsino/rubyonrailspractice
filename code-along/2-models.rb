@@ -65,4 +65,15 @@ p apple["id"]
 
 # 6. update a row's column value
 
+twitter = Company.find_by({"name" => "Twitter"})
+p twitter
+twitter["url"] = "No URL"
+twitter["name"] = "X.com"
+
+twitter.save
+
 # 7. delete a row
+x = Company.find_by({"name" => "X.com"})
+x.destroy
+
+puts "There are #{Company.all.count} companies"
